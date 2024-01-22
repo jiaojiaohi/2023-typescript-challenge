@@ -7,4 +7,6 @@
  */
 export function findMaxNumber(numbers: number[]): number {
     // 在此實現函式
+        let max = Math.max(...numbers);//表示不確定數量的參數，並將其視為一個陣列
+        return max;
 }
