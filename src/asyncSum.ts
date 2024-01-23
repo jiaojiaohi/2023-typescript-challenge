@@ -8,11 +8,13 @@
 
 export function asyncSum(numbers: number[]): Promise<number> {
     return new Promise((resolve, reject) => {
-        try {
-            // 請在此處寫下你的程式碼
-        } catch (error) {
-            reject(error);
-        }
+        var sum = 0;
+        // 請在此處寫下你的程式碼
+        numbers.forEach(element => {
+            sum = sum + element;
+        });
+        resolve(sum);
+
     });
 }
 
